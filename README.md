@@ -14,7 +14,9 @@ Any other differences are unintentional bugs -- please open an issue about anyth
 
 You can use this as a template to create a preprint for ArXiv. To do this, use the following command:
 
-```quarto use template mikemahoney218/quarto-arxiv```
+```bash
+quarto use template mikemahoney218/quarto-arxiv
+```
 
 This will install the extension and create an example qmd file and bibiography that you can use as a starting place for your article.
 
@@ -22,13 +24,17 @@ This will install the extension and create an example qmd file and bibiography t
 
 You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:
 
-```quarto install extension mikemahoney218/quarto-arxiv```
+```bash
+quarto install extension mikemahoney218/quarto-arxiv
+```
 
 ## Usage 
 
 To use the format, you can use the format names `arxiv-pdf` and `arxiv-html`. For example:
 
-```quarto render article.qmd --to arxiv-pdf```
+```bash
+quarto render article.qmd --to arxiv-pdf
+```
 
 or in your document yaml
 
@@ -40,4 +46,3 @@ format:
 ```
 
 You can view a preview of the rendered template at <https://mikemahoney218.github.io/quarto-arxiv/template.pdf>.
-
