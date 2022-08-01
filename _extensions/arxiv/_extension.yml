@@ -1,20 +1,21 @@
 title: ArXiV Template
 author: Mike Mahoney
-version: 0.0.1
+version: 0.1.0
 contributes:
   formats:
     common:
       # define below YAML configuration common to all formats
       filters:
         # You can include here Lua filters from your extension format 
-        - scholarly-metadata.lua
-        - author-info-blocks.lua
+        #- scholarly-metadata.lua
+        #- author-info-blocks.lua
       shortcodes:
         # You can include here Lua filters defining shortcodes from your extension
         - shortcodes.lua
       knitr:
         opts_chunk:
           echo: false
+      number-sections: true
     pdf:
       # define default configuration for the pdf version of your format
       documentclass: article
@@ -23,13 +24,12 @@ contributes:
         \usepackage{arxiv}
         \usepackage{orcidlink}
         \usepackage{amsmath}
-#      template-partials:
+        \usepackage[T1]{fontenc}
+      template-partials: ["partials/_authors.tex", "partials/title.tex", "partials/before-body.tex"]
       format-resources:
         # Add here the resources required for the PDF rendering
         - arxiv.sty
     html:
-      # define default configuration for the html version of your format
-      number-sections: true
       toc: true
       # Use a CSL file to style (https://www.zotero.org/styles/)
       csl: https://www.zotero.org/styles/chicago-author-date-16th-edition

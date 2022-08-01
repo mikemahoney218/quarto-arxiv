@@ -4,25 +4,37 @@ format:
   arxiv-pdf:
     keep-tex: true  
   arxiv-html: default
-institute:
-  - gpes: Graduate Program in Environmental Science, State University of New York College of Environmental Science and Forestry, 1 Forestry Drive, Syracuse, NY, 13210
-  - srm: Department of Sustainable Resources Management, State University of New York College of Environmental Science and Forestry, 1 Forestry Drive, Syracuse, NY, 13210
 author:
-  - Michael J Mahoney:
-      institute: [gpes]
-      email: fake_email@fakeyfake.com
-      correspondence: "yes"
-  - Some One Else:
-      institute: [srm]
+  - name: Michael J Mahoney
+    affiliations:
+      - name: State University of New York College of Environmental Science and Forestry
+        department: Graduate Program in Environmental Science
+        address: 1 Forestry Drive
+        city: Syracuse, NY
+        country: USA
+        postal-code: 13210
+    orcid: 0000-0003-2402-304X
+    email: fake_email@fakeyfake.com
+    url: https://mm218.dev
+  - name: Someone Else
+    affiliations:
+      - name: State University of New York College of Environmental Science and Forestry
+        department: Department of Sustainable Resources Management
+        address: 1 Forestry Drive
+        city: Syracuse, NY
+        country: USA
+        postal-code: 13210
 abstract: |
   This document is only a demo explaining how to use the template.
-keywords: [template, demo]
+keywords: 
+  - template
+  - demo
 bibliography: bibliography.bib  
 ---
 
 # Introduction {#sec-intro}
 
-This is an example of how to use this template to render articles in the standard arXiv format. Please note that this template is still in alpha as I work out some of the mismatches between PDF output and the arXiv style.
+This is an example of how to use this template to render articles in the standard arXiv format. 
 
 This quarto extension format supports PDF and HTML outputs. `quarto-journals` is aiming at porting existing {{< latex >}} template from journals to be used with quarto. PDF format is what require the most work to fit the journals guideline, but Quarto offer a nice rendering for HTML output too. This template only uses basic HTML format without any customization for now.
 
@@ -56,9 +68,9 @@ m_pois <- glm(Days ~ (Eth + Sex + Age + Lrn)^2, data = quine, family = poisson)
 kableExtra::kbl(broom::tidy(m_pois))
 ```
 
-## Using references {.unnumbered}
+## Using references
 
-I did not read this book [@CameronTrivedi2013] but it must be interesting 
+I did not read this book [@CameronTrivedi2013] but it must be interesting.
 
 {{< pagebreak >}}
 
