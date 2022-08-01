@@ -1,6 +1,6 @@
 title: ArXiV Template
 author: Mike Mahoney
-version: 0.1.0
+version: 0.1.1
 contributes:
   formats:
     common:
@@ -20,6 +20,7 @@ contributes:
       # Content to add in header that your format is using
       header-includes: |
         \usepackage{arxiv}
+        \usepackage{hyperref}
         \usepackage{orcidlink}
         \usepackage{amsmath}
         \usepackage[T1]{fontenc}
@@ -27,6 +28,7 @@ contributes:
       format-resources:
         # Add here the resources required for the PDF rendering
         - arxiv.sty
+        - orcidlink.sty
     html:
       toc: true
       # Use a CSL file to style (https://www.zotero.org/styles/)
