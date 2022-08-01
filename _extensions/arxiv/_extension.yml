@@ -1,6 +1,6 @@
 title: ArXiV Template
 author: Mike Mahoney
-version: 0.1.1
+version: 0.1.2
 contributes:
   formats:
     common:
@@ -25,6 +25,7 @@ contributes:
         \usepackage{amsmath}
         \usepackage[T1]{fontenc}
       template-partials: ["partials/_authors.tex", "partials/title.tex", "partials/before-body.tex"]
+      mathfont: "Latin Modern Math"
       format-resources:
         # Add here the resources required for the PDF rendering
         - arxiv.sty
