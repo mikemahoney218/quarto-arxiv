@@ -5,10 +5,8 @@ contributes:
   formats:
     common:
       # define below YAML configuration common to all formats
-      filters:
+#      filters:
         # You can include here Lua filters from your extension format 
-        #- scholarly-metadata.lua
-        #- author-info-blocks.lua
       shortcodes:
         # You can include here Lua filters defining shortcodes from your extension
         - shortcodes.lua
