@@ -28,7 +28,7 @@ You may also use this format with an existing Quarto project or document. From t
 quarto install extension mikemahoney218/quarto-arxiv
 ```
 
-## Usage 
+## Usage
 
 To use the format, you can use the format names `arxiv-pdf` and `arxiv-html`. For example:
 
