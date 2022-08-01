@@ -1,4 +1,4 @@
-# ArXiV Template
+# ArXiv Template
 
 This is a Quarto template that assists you in creating PDF outputs which closely match those published on arXiv. If you are intending to publish your article on arXiv, it is highly recommended you upload your TeX files (and supporting files, including generated `.bbl` and figure files) directly. However, this template supports rendering PDFs which resemble arXiv preprints for upload to other repositories either before or instead of submission to arXiv itself.
 
@@ -33,5 +33,5 @@ format:
     keep-tex: true    
 ```
 
-You can view a preview of the rendered template at <https://quarto-journals.github.io/quarto-arxiv/>.
+You can view a preview of the rendered template at <https://mikemahoney218.github.io/quarto-arxiv/template.pdf>.
 
