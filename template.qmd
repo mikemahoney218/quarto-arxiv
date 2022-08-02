@@ -34,17 +34,21 @@ bibliography: bibliography.bib
 
 # Introduction {#sec-intro}
 
-This is an example of how to use this template to render articles in the standard arXiv format. 
+This is an example of how to use this template to render journal articles. This template is inspired by the arXiv rticles template for rmarkdown, repurposed for the Quarto publishing system.
 
-This quarto extension format supports PDF and HTML outputs. `quarto-journals` is aiming at porting existing {{< latex >}} template from journals to be used with quarto. PDF format is what require the most work to fit the journals guideline, but Quarto offer a nice rendering for HTML output too. This template only uses basic HTML format without any customization for now.
+This quarto extension format supports PDF and HTML outputs. This template is primarily focused on generating acceptable {{< latex >}} outputs from Quarto, but renders an acceptable HTML output using the standard Quarto options.
 
-# Demo of some features found in this demo journal template
+# Quarto
 
-## Shortcode demo {#sec-shortcode}
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 
-PDF are rendered using {{< latex >}} but it is best if one can use a Markdown syntax for cross format support.
+# Running Code
 
-## Code chunk {#sec-chunks}
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
 
 This format hide chunks by default:
 
@@ -60,22 +64,154 @@ But you can set `echo` option to `true` locally in the chunk:
 
 ```{r}
 #| echo: true
+#| label: tbl-glm
 #| tbl-cap: "A table."
 
 # install.packages("broom")
 # install.packages("kableExtra")
 m_pois <- glm(Days ~ (Eth + Sex + Age + Lrn)^2, data = quine, family = poisson)
-kableExtra::kbl(broom::tidy(m_pois))
+kableExtra::kable_styling(
+  kableExtra::kbl(broom::tidy(m_pois))
+)
 ```
 
-## Using references
 
-I did not read this book [@CameronTrivedi2013] but it must be interesting.
+# Markdown Basics
+
+This section of the template is adapted from [Quarto's documentation on Markdown basics](https://quarto.org/docs/authoring/markdown-basics.html).
+
+## Text Formatting
+
++-----------------------------------+-------------------------------+
+| Markdown Syntax                   | Output                        |
++===================================+===============================+
+|     *italics* and **bold**        | *italics* and **bold**        |
++-----------------------------------+-------------------------------+
+|     superscript^2^ / subscript~2~ | superscript^2^ / subscript~2~ |
++-----------------------------------+-------------------------------+
+|     ~~strikethrough~~             | ~~strikethrough~~             |
++-----------------------------------+-------------------------------+
+|     `verbatim code`               | `verbatim code`               |
++-----------------------------------+-------------------------------+
+
+## Headings {#headings}
+
++---------------------+-----------------------------------+
+| Markdown Syntax     | Output                            |
++=====================+===================================+
+|     # Header 1      | # Header 1 {.heading-output}      |
++---------------------+-----------------------------------+
+|     ## Header 2     | ## Header 2 {.heading-output}     |
++---------------------+-----------------------------------+
+|     ### Header 3    | ### Header 3 {.heading-output}    |
++---------------------+-----------------------------------+
+
+## Equations
+
+Use `$` delimiters for inline math and `$$` delimiters for display math. For example:
+
++-------------------------------+-------------------------+
+| Markdown Syntax               | Output                  |
++===============================+=========================+
+|     inline math: $E = mc^{2}$ | inline math: $E=mc^{2}$ |
++-------------------------------+-------------------------+
+|     display math:             | display math:\          |
+|                               | $$E = mc^{2}$$          |
+|     $$E = mc^{2}$$            |                         |
++-------------------------------+-------------------------+
+
+If assigned an ID, display math equations will be automatically numbered:
+
+$$
+\frac{\partial \mathrm C}{ \partial \mathrm t } + \frac{1}{2}\sigma^{2} \mathrm S^{2}
+\frac{\partial^{2} \mathrm C}{\partial \mathrm C^2}
+  + \mathrm r \mathrm S \frac{\partial \mathrm C}{\partial \mathrm S}\ =
+  \mathrm r \mathrm C 
+$$ {#eq-black-scholes}
+
+## Other Blocks
+
++-----------------------------+--------------------------+
+| Markdown Syntax             | Output                   |
++=============================+==========================+
+|     > Blockquote            | > Blockquote             |
++-----------------------------+--------------------------+
+|     | Line Block            | | Line Block             |
+|     |   Spaces and newlines | |    Spaces and newlines |
+|     |   are preserved       | |    are preserved       |
++-----------------------------+--------------------------+
+
+## Cross-references {#sec-crf}
+
+![A sunflower](sunflower.png){#fig-sunflower}
+
++---------------------------------------+---------------------------------+
+| Markdown Format                       | Output                          |
++=======================================+=================================+
+|     @fig-sunflower is pretty.         | @fig-sunflower is pretty.       |
++---------------------------------------+---------------------------------+
+|     @tbl-glm was created from code.   | @tbl-glm was created from code. |
++---------------------------------------+---------------------------------+
+|     @sec-crf is this section.         | @sec-crf is this section.       |
++---------------------------------------+---------------------------------+
+|     @eq-black-scholes is above.       | @eq-black-scholes is above.     |
++---------------------------------------+---------------------------------+
+
+See the [Quarto documentation on cross-references for more](https://quarto.org/docs/authoring/cross-references.html).
+
+
+# Citations
+
+This section of the template is adapted from the [Quarto citation documentation](https://quarto.org/docs/authoring/footnotes-and-citations.html).
+
+Quarto supports bibliography files in a wide variety of formats including BibTeX and CSL. Add a bibliography to your document using the `bibliography` YAML metadata field. For example:
+
+``` yaml
+---
+title: "My Document"
+bibliography: references.bib
+---
+```
+
+See the [Pandoc Citations](https://pandoc.org/MANUAL.html#citations) documentation for additional information on bibliography formats.
+
+## Citation Syntax {#sec-citations}
+
+Quarto uses the standard Pandoc markdown representation for citations. Here are some examples:
+
++-------------------------------------------+---------------------------------------------------------------------+
+| Markdown Format                           | Output                                                              |
++===========================================+=====================================================================+
+|     Blah Blah [see @knuth1984, pp. 33-35; | Blah Blah [see @knuth1984, pp. 33-35; also @wickham2015, chap. 1]   |
+|     also @wickham2015, chap. 1]           |                                                                     |
++-------------------------------------------+---------------------------------------------------------------------+
+|     Blah Blah [@knuth1984, pp. 33-35,     | Blah Blah [@knuth1984, pp. 33-35, 38-39 and passim]                 |
+|     38-39 and passim]                     |                                                                     |
++-------------------------------------------+---------------------------------------------------------------------+
+|     Blah Blah [@wickham2015; @knuth1984]. | Blah Blah [@wickham2015; @knuth1984].                               |
++-------------------------------------------+---------------------------------------------------------------------+
+|     Wickham says blah [-@wickham2015]     | Wickham says blah [-@wickham2015]                                   |
++-------------------------------------------+---------------------------------------------------------------------+
+|     @knuth1984 says blah.                 | @knuth1984 says blah.                                               |
++-------------------------------------------+---------------------------------------------------------------------+
+|     @knuth1984 [p. 33] says blah.         | @knuth1984 [p. 33] says blah.                                       |
++-----------------------------------+-----------------------------------------------------------------------------+
+
+See the [Pandoc Citations](https://pandoc.org/MANUAL.html#citations) documentation for additional information on citation syntax.
+
+To provide a custom citation stylesheet, provide a path to a CSL file using the `csl` metadata field in your document, for example:
+
+``` yaml
+---
+title: "My Document"
+bibliography: references.bib
+csl: nature.csl
+---
+```
 
 {{< pagebreak >}}
 
 # References {.unnumbered}
 
-:::{#refs}
-
+::: {#refs}
 :::

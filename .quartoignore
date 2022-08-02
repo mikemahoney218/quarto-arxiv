@@ -1,3 +1,4 @@
 # Add files / folder that are useful to your repo
 # but should not be in the downloaded bundle after `quarto use template`
 style-guide
+quarto-arxiv.Rproj

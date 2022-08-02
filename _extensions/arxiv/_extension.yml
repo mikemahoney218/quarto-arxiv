@@ -1,12 +1,12 @@
 title: ArXiV Template
 author: Mike Mahoney
-version: 0.1.2
+version: 0.1.3
 contributes:
   formats:
     common:
       # define below YAML configuration common to all formats
 #      filters:
-        # You can include here Lua filters from your extension format 
+        # You can include here Lua filters from your extension format
       shortcodes:
         # You can include here Lua filters defining shortcodes from your extension
         - shortcodes.lua
@@ -20,7 +20,6 @@ contributes:
       # Content to add in header that your format is using
       header-includes: |
         \usepackage{arxiv}
-        \usepackage{hyperref}
         \usepackage{orcidlink}
         \usepackage{amsmath}
         \usepackage[T1]{fontenc}
