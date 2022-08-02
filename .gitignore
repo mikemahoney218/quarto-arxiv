@@ -1,4 +1,6 @@
 .DS_Store
 .Rproj.user
-
+template.tex
 /.quarto/
+arxiv.sty
+orcidlink.sty

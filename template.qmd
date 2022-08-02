@@ -50,17 +50,7 @@ When you click the **Render** button a document will be generated that includes 
 1 + 1
 ```
 
-This format hide chunks by default:
-
-```{r}
-#| prompt: true
-#| fig-cap: "A figure."
-# Loading some data but this chunk won't be shown.
-data("quine", package = "MASS")
-plot(quine$Days)
-```
-
-But you can set `echo` option to `true` locally in the chunk:
+This format hide chunks by default, but you can set `echo` option to `true` locally in the chunk:
 
 ```{r}
 #| echo: true
@@ -69,6 +59,7 @@ But you can set `echo` option to `true` locally in the chunk:
 
 # install.packages("broom")
 # install.packages("kableExtra")
+data("quine", package = "MASS")
 m_pois <- glm(Days ~ (Eth + Sex + Age + Lrn)^2, data = quine, family = poisson)
 kableExtra::kable_styling(
   kableExtra::kbl(broom::tidy(m_pois))
