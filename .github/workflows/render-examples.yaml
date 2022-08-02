@@ -20,7 +20,7 @@ jobs:
           r-version: release
           use-public-rspm: true
 
-      - name: Install dependencies
+      - name: Install R dependencies
         run: |
           install.packages('pak')
           pak::pkg_install(c("rmarkdown", "MASS", "broom", "kableExtra"))

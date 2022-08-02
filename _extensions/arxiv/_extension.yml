@@ -22,6 +22,7 @@ contributes:
         \usepackage{arxiv}
         \usepackage{orcidlink}
         \usepackage{lm-math}
+        \usepackage{unicode-math}
         \usepackage{amsmath}
         \usepackage[T1]{fontenc}
       template-partials: ["partials/_authors.tex", "partials/title.tex", "partials/before-body.tex"]
