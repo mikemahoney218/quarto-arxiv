@@ -46,4 +46,4 @@ format:
     keep-tex: true    
 ```
 
-You can view a preview of the rendered template at <https://mikemahoney218.github.io/quarto-arxiv/template.pdf> (PDF output) and <https://mikemahoney218.github.io/quarto-arxiv/template> (HTML output).
+You can view a preview of the rendered template at <https://mikemahoney218.github.io/quarto-arxiv/template.pdf>.
