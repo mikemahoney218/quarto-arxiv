@@ -1,0 +1,41 @@
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+name: render-examples
+
+jobs:
+  pkgdown:
+    runs-on: ubuntu-latest
+    # Only restrict concurrency for non-PR jobs
+    concurrency:
+      group: pkgdown-${{ github.event_name != 'pull_request' || github.run_id }}
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: r-lib/actions/setup-pandoc@v2
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: release
+          use-public-rspm: true
+
+      - name: Install dependencies
+        run: |
+          install.packages('pak')
+          pak::pkg_install(c("rmarkdown", "MASS", "broom", "kableExtra"))
+        shell: Rscript {0}
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
+
+      - uses: quarto-dev/quarto-actions/render@v2
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Render templates"
+          file_pattern: docs/*

@@ -2,3 +2,6 @@
 # but should not be in the downloaded bundle after `quarto use template`
 style-guide
 quarto-arxiv.Rproj
+.github
+_quarto.yml
+docs
