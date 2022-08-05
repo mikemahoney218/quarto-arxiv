@@ -1,0 +1,4 @@
+- source: template.qmd
+  quarto-pub:
+    - id: 376a9371-3109-4c1a-acd9-6a97a5dbfb6c
+      url: 'https://quartopub.org/sites/mike/quarto-arxiv-template'

@@ -31,9 +31,8 @@ jobs:
 
       - uses: quarto-dev/quarto-actions/setup@v2
 
-      - uses: quarto-dev/quarto-actions/render@v2
+      - uses: quarto-dev/quarto-actions/publish@v2
+        with: 
+          QUARTO_PUB_AUTH_TOKEN: ${{ secrets.QUARTO_PUB_AUTH_TOKEN }}
+          target: quarto-pub
 
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "Render templates"
-          file_pattern: docs/*
