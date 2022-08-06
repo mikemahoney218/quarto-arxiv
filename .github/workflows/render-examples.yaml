@@ -32,7 +32,7 @@ jobs:
       - uses: quarto-dev/quarto-actions/setup@v2
 
       - uses: quarto-dev/quarto-actions/publish@v2
-        with: 
+        with:
           QUARTO_PUB_AUTH_TOKEN: ${{ secrets.QUARTO_PUB_AUTH_TOKEN }}
           target: quarto-pub
-
+          path: template.qmd
