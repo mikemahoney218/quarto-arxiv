@@ -170,6 +170,7 @@ See the [Pandoc Citations](https://pandoc.org/MANUAL.html#citations) documentati
 
 Quarto uses the standard Pandoc markdown representation for citations. Here are some examples:
 
+
 +-------------------------------------------+---------------------------------------------------------------------+
 | Markdown Format                           | Output                                                              |
 +===========================================+=====================================================================+
@@ -183,10 +184,16 @@ Quarto uses the standard Pandoc markdown representation for citations. Here are 
 +-------------------------------------------+---------------------------------------------------------------------+
 |     Wickham says blah [-@wickham2015]     | Wickham says blah [-@wickham2015]                                   |
 +-------------------------------------------+---------------------------------------------------------------------+
-|     @knuth1984 says blah.                 | @knuth1984 says blah.                                               |
-+-------------------------------------------+---------------------------------------------------------------------+
-|     @knuth1984 [p. 33] says blah.         | @knuth1984 [p. 33] says blah.                                       |
-+-----------------------------------+-----------------------------------------------------------------------------+
+
+You can also write in-text citations, as follows:
+
++-----------------------------------+-------------------------------+
+| Markdown Format                   | Output                        |
++===================================+===============================+
+|     @knuth1984 says blah.         | @knuth1984 says blah.         |
++-----------------------------------+-------------------------------+
+|     @knuth1984 [p. 33] says blah. | @knuth1984 [p. 33] says blah. |
++-----------------------------------+-------------------------------+
 
 See the [Pandoc Citations](https://pandoc.org/MANUAL.html#citations) documentation for additional information on citation syntax.
 
