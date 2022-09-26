@@ -5,6 +5,9 @@ $--
 $-- %%%% TODO %%%%%
 $-- Customize is needed, like below for printing the authors. Otherwise remove this partials to use Quarto default one.
 $-- %%%%%%%%%%%%%%%%
+$if(date)$
+\renewcommand{\today}{$date$}
+$endif$
 $if(title)$
 \title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
 $endif$
