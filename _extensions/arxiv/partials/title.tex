@@ -16,6 +16,10 @@ $endif$
 $if(date)$
 \renewcommand{\today}{$date$}
 $endif$
+\newcommand{\runninghead}{A Preprint }
+$if(runninghead)$
+\renewcommand{\runninghead}{$runninghead$ }
+$endif$
 $if(title)$
 \title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
 $endif$

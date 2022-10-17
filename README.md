@@ -47,3 +47,16 @@ format:
 ```
 
 You can view a preview of the rendered template at <https://mike.quarto.pub/quarto-arxiv-template/>.
+
+This template provides a few custom YAML header options to control the PDF output:
+
+```yaml
+linenumbers: false # Add (continuous) line numbers?
+doublespacing: false # Double space the PDF output?
+runninghead: "A Preprint" # The text on the top of each page of the output
+```
+
+Both `linenumbers` and `doublespacing` are booleans, defaulting to `false`, 
+and were added in version 0.2.0. `runninghead` can be any text and was added
+in version 0.2.1. You can define these either as top-level options, or under 
+`arxiv-pdf`; they only impact the generated PDF.

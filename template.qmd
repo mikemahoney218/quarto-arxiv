@@ -5,6 +5,7 @@ format:
     keep-tex: true  
     linenumbers: false
     doublespacing: false
+    runninghead: "A Preprint"
   arxiv-html: default
 author:
   - name: Michael J Mahoney
