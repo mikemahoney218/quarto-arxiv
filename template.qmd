@@ -3,6 +3,8 @@ title: "Demo arXiv template"
 format:
   arxiv-pdf:
     keep-tex: true  
+    linenumbers: false
+    doublespacing: false
   arxiv-html: default
 author:
   - name: Michael J Mahoney

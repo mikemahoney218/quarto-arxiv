@@ -1,6 +1,6 @@
 title: ArXiv Template
 author: Mike Mahoney
-version: 0.1.5
+version: 0.1.6
 contributes:
   formats:
     common:
@@ -17,6 +17,8 @@ contributes:
     pdf:
       # define default configuration for the pdf version of your format
       documentclass: article
+      linenumbers: false
+      doublespacing: false
       # Content to add in header that your format is using
       header-includes: |
         \usepackage{arxiv}

@@ -5,6 +5,14 @@ $--
 $-- %%%% TODO %%%%%
 $-- Customize is needed, like below for printing the authors. Otherwise remove this partials to use Quarto default one.
 $-- %%%%%%%%%%%%%%%%
+$if(linenumbers)$
+\usepackage{lineno}
+\linenumbers
+$endif$
+$if(doublespacing)$
+\usepackage{setspace}
+\doublespacing
+$endif$
 $if(date)$
 \renewcommand{\today}{$date$}
 $endif$
