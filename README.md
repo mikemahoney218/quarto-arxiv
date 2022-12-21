@@ -68,5 +68,5 @@ Use this template for a paper or a preprint? [Let me know,](https://github.com/m
 The following papers were rendered using this template:
 
 + [Fine-resolution landscape-scale biomass mapping using a spatiotemporal patchwork of LiDAR coverages](https://arxiv.org/pdf/2205.08530.pdf) -- now published at [International Journal of Applied Earth Observation and Geoinformation](https://doi.org/10.1016/j.jag.2022.103059)!
-+ [Classification and mapping of low-statured ‘shrubland’ cover types in post-agricultural landscapes of the US Northeast](https://arxiv.org/pdf/2205.05047.pdf)
++ [Classification and mapping of low-statured ‘shrubland’ cover types in post-agricultural landscapes of the US Northeast](https://arxiv.org/pdf/2205.05047.pdf) (version 1)
 
