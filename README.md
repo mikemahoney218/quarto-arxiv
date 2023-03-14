@@ -72,3 +72,4 @@ The following papers were rendered using this template:
 + [Borch: A Deep Universal Probabilistic Programming Language](https://arxiv.org/abs/2209.06168)
 + [Analysing and visualising bike-sharing demand with outliers](https://arxiv.org/abs/2204.06112) (version 2)
 + [RANG: Reconstructing reproducible R computational environments](https://arxiv.org/abs/2303.04758)
++ [Assessing the performance of spatial cross-validation approaches for models of spatially structured data](https://arxiv.org/abs/2303.07334)
