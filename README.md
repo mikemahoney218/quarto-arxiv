@@ -71,5 +71,5 @@ The following papers were rendered using this template:
 + [Classification and mapping of low-statured ‘shrubland’ cover types in post-agricultural landscapes of the US Northeast](https://arxiv.org/pdf/2205.05047.pdf) (version 1) -- now published at [International Journal of Remote Sensing](https://doi.org/10.1080/01431161.2022.2155086)!
 + [Borch: A Deep Universal Probabilistic Programming Language](https://arxiv.org/abs/2209.06168)
 + [Analysing and visualising bike-sharing demand with outliers](https://arxiv.org/abs/2204.06112) (version 2)
-+ [RANG: Reconstructing reproducible R computational environments](https://arxiv.org/abs/2303.04758)
-+ [Assessing the performance of spatial cross-validation approaches for models of spatially structured data](https://arxiv.org/abs/2303.07334)
++ [RANG: Reconstructing reproducible R computational environments](https://arxiv.org/abs/2303.04758) (with source code at https://github.com/chainsawriot/rang/tree/paper/paper !)
++ [Assessing the performance of spatial cross-validation approaches for models of spatially structured data](https://arxiv.org/abs/2303.07334) (with source code at https://github.com/cafri-labs/assessing-spatial-cv/ !)
