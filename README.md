@@ -73,3 +73,4 @@ The following papers were rendered using this template:
 + [Analysing and visualising bike-sharing demand with outliers](https://arxiv.org/abs/2204.06112) (version 2)
 + [RANG: Reconstructing reproducible R computational environments](https://arxiv.org/abs/2303.04758) (with source code at https://github.com/chainsawriot/rang/tree/paper/paper !)
 + [Assessing the performance of spatial cross-validation approaches for models of spatially structured data](https://arxiv.org/abs/2303.07334) (with source code at https://github.com/cafri-labs/assessing-spatial-cv/ !)
++ [waywiser: Ergonomic Methods for Assessing Spatial Models](https://arxiv.org/abs/2303.11312)
