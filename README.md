@@ -74,3 +74,4 @@ The following papers were rendered using this template:
 + [RANG: Reconstructing reproducible R computational environments](https://arxiv.org/abs/2303.04758) (with source code at https://github.com/chainsawriot/rang/tree/paper/paper !)
 + [Assessing the performance of spatial cross-validation approaches for models of spatially structured data](https://arxiv.org/abs/2303.07334) (with source code at https://github.com/cafri-labs/assessing-spatial-cv/ !)
 + [waywiser: Ergonomic Methods for Assessing Spatial Models](https://arxiv.org/abs/2303.11312)
++ [Mapping historical forest biomass for stock-change assessments at parcel to landscape scales](https://arxiv.org/abs/2304.02632)
