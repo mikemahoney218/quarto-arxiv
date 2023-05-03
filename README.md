@@ -75,3 +75,4 @@ The following papers were rendered using this template:
 + [Assessing the performance of spatial cross-validation approaches for models of spatially structured data](https://arxiv.org/abs/2303.07334) (with source code at https://github.com/cafri-labs/assessing-spatial-cv/ !)
 + [waywiser: Ergonomic Methods for Assessing Spatial Models](https://arxiv.org/abs/2303.11312)
 + [Mapping historical forest biomass for stock-change assessments at parcel to landscape scales](https://arxiv.org/abs/2304.02632)
++ [tmfast fits topic models fast](https://arxiv.org/abs/2305.01535)
