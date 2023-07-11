@@ -37,7 +37,7 @@ bibliography: bibliography.bib
 
 # Introduction {#sec-intro}
 
-This is an example of how to use this template to render journal articles. This template is inspired by the arXiv rticles template for rmarkdown, repurposed for the Quarto publishing system.
+This is an example of how to use this template to render journal articles. This template is inspired by the arXiv articles template for rmarkdown, repurposed for the Quarto publishing system.
 
 This quarto extension format supports PDF and HTML outputs. This template is primarily focused on generating acceptable {{< latex >}} outputs from Quarto, but renders an acceptable HTML output using the standard Quarto options.
 
