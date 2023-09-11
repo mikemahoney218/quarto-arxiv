@@ -32,5 +32,9 @@ $if(subtitle)$
 \makeatother
 \subtitle{$subtitle$}
 $endif$
-\author{${ by-author:_authors.tex()[\\\\\\] }}
+\def\asep{\\\\\\ } % default: all authors on same column
+$if(authorcols)$
+\def\asep{\And }
+$endif$
+\author{${ by-author:_authors.tex()[\asep] }}
 \date{$date$}

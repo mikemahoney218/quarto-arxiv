@@ -19,6 +19,7 @@ contributes:
       documentclass: article
       linenumbers: false
       doublespacing: false
+      authorcols: false
       # Content to add in header that your format is using
       header-includes: |
         \usepackage{arxiv}

@@ -54,6 +54,7 @@ This template provides a few custom YAML header options to control the PDF outpu
 linenumbers: false # Add (continuous) line numbers?
 doublespacing: false # Double space the PDF output?
 runninghead: "A Preprint" # The text on the top of each page of the output
+authorcols: false # Should authors be listed in a single column (default) or in multiple columns (`authorcols: true`)
 ```
 
 Both `linenumbers` and `doublespacing` are booleans, defaulting to `false`, 
