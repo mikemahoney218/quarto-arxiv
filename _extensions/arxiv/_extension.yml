@@ -1,6 +1,6 @@
 title: ArXiv Template
 author: Mike Mahoney
-version: 0.2.1
+version: 0.2.3
 contributes:
   formats:
     common:
