@@ -31,9 +31,8 @@ quarto install extension mikemahoney218/quarto-arxiv
 This template uses the Latin Modern family of fonts. On Mac, you might need to install these using:
 
 ```bash
-brew tap homebrew/cask-fonts
-brew install font-latin-modern
-brew install font-latin-modern-math
+brew install --cask font-latin-modern
+brew install --cask font-latin-modern-math
 ```
 
 On Ubuntu, you might need to install these fonts using:
@@ -58,7 +57,7 @@ or in your document yaml
 format:
   pdf: default
   arxiv-pdf:
-    keep-tex: true    
+    keep-tex: true
 ```
 
 You can view a preview of the rendered template at <https://mike.quarto.pub/quarto-arxiv-template/>.
@@ -72,9 +71,9 @@ runninghead: "A Preprint" # The text on the top of each page of the output
 authorcols: false # Should authors be listed in a single column (default) or in multiple columns (`authorcols: true`)
 ```
 
-Both `linenumbers` and `doublespacing` are booleans, defaulting to `false`, 
+Both `linenumbers` and `doublespacing` are booleans, defaulting to `false`,
 and were added in version 0.2.0. `runninghead` can be any text and was added
-in version 0.2.1. You can define these either as top-level options, or under 
+in version 0.2.1. You can define these either as top-level options, or under
 `arxiv-pdf`; they only impact the generated PDF.
 
 ## In The Wild
