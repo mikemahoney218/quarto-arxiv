@@ -5,7 +5,8 @@ format:
     keep-tex: true  
     linenumbers: false
     doublespacing: false
-    runninghead: "A Preprint"
+    runninghead: "Short title"
+    subhead: "This is the subhead on the title page"
   arxiv-html: default
 author:
   - name: Michael J Mahoney
