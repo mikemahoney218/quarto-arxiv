@@ -3,6 +3,11 @@ $--
 $-- %%%% TODO %%%%%
 $-- Customize is needed, otherwise remove this partials to use Quarto default one
 $-- %%%%%%%%%%%%%%%%
+$if(subhead)$
+    \newcommand{\subhead}{$subhead$}
+$else$
+    \newcommand{\subhead}{}
+$endif$
 $if(has-frontmatter)$
 \frontmatter
 $endif$
